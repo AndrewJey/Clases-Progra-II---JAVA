@@ -84,18 +84,8 @@ public class Arbol {
 	//Busca un elemento en el arbol
         public void buscar (int Elem, NodoArbol A)
         {
-            if(A == null | A.dato == Elem)
-            {
-		System.out.print(A.dato + " ");
-		return;
-            }
-            else
-            {
-                if(Elem>A.dato)
-                    buscar(Elem, A.Hder);
-                else
-                    buscar( Elem, A.Hizq);
-            }
-	}
+            while (A != null && A.dato != Elem) A = Elem > A.dato ? A.Hder : A.Hizq;
+            System.out.print(A == null ? "No encontrado" : A.dato + " ");
+    }
     
 }

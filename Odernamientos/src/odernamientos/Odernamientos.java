@@ -105,6 +105,9 @@ public class Odernamientos {
     
     public static void quicksort(int arreglo[], int izq, int der)
     {
+        if (arreglo == null) throw new IllegalArgumentException("El arreglo es obligatorio.");
+        if (izq >= der) return;
+        if (izq < 0 || der >= arreglo.length) throw new IndexOutOfBoundsException("Rango de ordenamiento inválido.");
         int pivote=arreglo[izq]; // tomamos primer elemento como pivote
         int i=izq; // i realiza la búsqueda de izquierda a derecha
         int j=der; // j realiza la búsqueda de derecha a izquierda

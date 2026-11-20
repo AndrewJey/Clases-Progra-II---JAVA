@@ -1,0 +1,16 @@
+[
+  {
+    "project": "Odernamientos/build.xml",
+    "source": "checks/SortCheck.java",
+    "main": "SortCheck",
+    "headless": true,
+    "classpath": []
+  },
+  {
+    "project": "ArbolBinario/build.xml",
+    "source": "checks/TreeMissingCheck.java",
+    "main": "TreeMissingCheck",
+    "headless": true,
+    "classpath": []
+  }
+]
